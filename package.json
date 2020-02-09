@@ -1,0 +1,42 @@
+{
+  "name": "aspera-isa",
+  "version": "0.1.0",
+  "description": "Instruction set architecture for the Aspera virtual machine",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": "git@github.com:aspera-project/aspera-isa.git",
+  "author": "ahdavis <ahdavis13@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "./lib/**/*"
+  ],
+  "scripts": {
+    "build": "rm -rf ./lib && tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json --watch --coverage=false --changedSince=origin/master",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint",
+    "version": "yarn format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "doc": "rm -rf ./docs && typedoc src/"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.16.9",
+    "typescript": "^3.7.5"
+  },
+  "keywords": [
+    "Virtual",
+    "Machine",
+    "ISA",
+    "Aspera"
+  ]
+}

@@ -143,6 +143,24 @@ export enum Opcode {
 	 * executes.
 	 */
 	SYS,
+
+	/**
+	 * Pops the top two values off of the stack and
+	 * writes the top *n* stack values to memory
+	 * starting at address *m*, where *m* and *n*
+	 * are the first and second values popped,
+	 * respectively.
+	 */
+	STO,
+
+	/**
+	 * Pops the top two values off of the stack
+	 * and pushes the the first *n* bytes of memory
+	 * starting at location *m* onto the stack, where
+	 * *m* and *n* are the first and second values
+	 * popped, respectively.
+	 */
+	LD,
 }
 
 // end of file

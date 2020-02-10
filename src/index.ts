@@ -8,5 +8,6 @@
 
 // exports
 export { Opcode } from './codegen/Opcode';
+export { Instruction } from './codegen/Instruction';
 
 // end of file

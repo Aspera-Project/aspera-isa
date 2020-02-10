@@ -9,5 +9,6 @@
 // exports
 export { Opcode } from './codegen/Opcode';
 export { Instruction } from './codegen/Instruction';
+export { NOPInstruction } from './codegen/NOPInstruction';
 
 // end of file

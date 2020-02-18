@@ -10,5 +10,6 @@
 export { Opcode } from './codegen/Opcode';
 export { Instruction } from './codegen/Instruction';
 export { NOPInstruction } from './codegen/NOPInstruction';
+export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file

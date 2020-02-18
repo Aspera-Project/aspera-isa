@@ -138,8 +138,9 @@ export enum Opcode {
 	 * Executes a system call. The ID of the syscall
 	 * must be on top of the stack, and any arguments
 	 * must follow it on the stack. The ID and all
-	 * arguments will be popped after the syscall
-	 * executes.
+	 * arguments will be popped before the syscall
+	 * executes, and any results will then be pushed
+	 * onto the stack.
 	 */
 	SYS,
 

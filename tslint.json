@@ -4,7 +4,6 @@
 		"tslint-config-prettier"
 	],
 	"rules": {
-		"no-bitwise": false,
-		"no-string-literal": false
+		"no-bitwise": false
 	}
 }

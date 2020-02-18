@@ -90,43 +90,42 @@ export enum Opcode {
 	XOR,
 
 	/**
-	 * Pops the top value off of the stack
-	 * and sets the program counter to that value
+	 * Sets the program counter to the
+	 * argument of the instruction
 	 */
 	JMP,
 
 	/**
-	 * Pops the top two values off the stack
-	 * and sets the program counter to the second
-	 * value if the first is negative
+	 * Pops the top value off the stack
+	 * and sets the program counter to the argument
+	 * if the popped value is negative
 	 */
 	JN,
 
 	/**
-	 * Pops the top two values off the stack and
-	 * sets the program counter to the second value
-	 * if the first is positive
+	 * Pops the top value off the stack and
+	 * sets the program counter to the argument
+	 * if the popped value is positive
 	 */
 	JP,
 
 	/**
-	 * Pops the top two values off the stack
-	 * and sets the program counter to the second value
-	 * if the first is zero
+	 * Pops the top value off the stack
+	 * and sets the program counter to the argument
+	 * if the popped value is zero
 	 */
 	JZ,
 
 	/**
-	 * Pops the top two values off the stack
-	 * and sets the program counter to the second value
-	 * if the first is nonzero
+	 * Pops the top value off the stack
+	 * and sets the program counter to the argument
+	 * if the popped value is nonzero
 	 */
 	JNZ,
 
 	/**
-	 * Pops the top value off the stack
-	 * and executes a subroutine located
-	 * at that address
+	 * Executes a subroutine located at the
+	 * argument of the instruction
 	 */
 	CALL,
 

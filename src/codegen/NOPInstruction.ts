@@ -1,9 +1,9 @@
 /*
  * NOPInstruction.ts
- * Defines a class that represents a NOP instruction 
+ * Defines a class that represents a NOP instruction
  * Created by Andrew Davis
  * Created on 2/10/2020
- * Licensed under the MIT License 
+ * Licensed under the MIT License
  */
 
 // imports
@@ -20,8 +20,8 @@ export class NOPInstruction extends Instruction {
 	 * Constructs a new `NOPInstruction` instance
 	 */
 	public constructor() {
-		super(Opcode.NOP); // call the superclass constructor 
+		super(Opcode.NOP); // call the superclass constructor
 	}
 }
 
-//end of file
+// end of file

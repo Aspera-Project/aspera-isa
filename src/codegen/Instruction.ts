@@ -1,9 +1,9 @@
 /*
  * Instruction.ts
- * Defines a class that represents an Aspera instruction 
+ * Defines a class that represents an Aspera instruction
  * Created by Andrew Davis
  * Created on 2/10/2020
- * Licensed under the MIT License 
+ * Licensed under the MIT License
  */
 
 // import
@@ -27,7 +27,7 @@ export abstract class Instruction {
 	 * @param opcode The opcode for the `Instruction`
 	 */
 	public constructor(opcode: Opcode) {
-		this._opcode = opcode; // init the opcode field 
+		this._opcode = opcode; // init the opcode field
 	}
 
 	/**

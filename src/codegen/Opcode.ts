@@ -20,7 +20,7 @@ export enum Opcode {
 	/**
 	 * Pushes a numeric value onto the stack
 	 */
-	PSH,
+	PUSH,
 
 	/**
 	 * Pops a numeric value off of the stack

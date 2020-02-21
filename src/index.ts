@@ -13,6 +13,7 @@ export { NOPInstruction } from './codegen/NOPInstruction';
 export { PUSHInstruction } from './codegen/PUSHInstruction';
 export { POPInstruction } from './codegen/POPInstruction';
 export { ADDInstruction } from './codegen/ADDInstruction';
+export { SUBInstruction } from './codegen/SUBInstruction';
 export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file

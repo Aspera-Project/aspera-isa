@@ -163,9 +163,27 @@ export enum Opcode {
 	LD,
 
 	/**
-	 * Pushes a random 24-bit integer onto the stack
+	 * Pushes a random 24-bit integer onto the stack 
 	 */
 	RAND,
+
+	/**
+	 * Pops the top value off the stack, increments it,
+	 * and pushes it back onto the stack
+	 */
+	INC,
+
+	/**
+	 * Pops the top value off the stack, decrements it,
+	 * and pushes it back onto the stack
+	 */
+	DEC,
+
+	/**
+	 * Pops the top value off the stack, negates it,
+	 * and pushes it back onto the stack
+	 */
+	NEG,
 }
 
 // end of file

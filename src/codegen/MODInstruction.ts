@@ -17,7 +17,7 @@ export class MODInstruction extends Instruction {
 	// no fields
 
 	/**
-	 * Constructs a new `DIVInstruction` instance
+	 * Constructs a new `MODInstruction` instance
 	 */
 	public constructor() {
 		super(Opcode.MOD); // call the superclass constructor

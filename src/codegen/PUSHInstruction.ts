@@ -28,13 +28,13 @@ export class PUSHInstruction extends Instruction {
 	 *
 	 * @param value The value to be pushed
 	 *
-	 * @throws ArgSizeError If the value is < 0 or > 2^24 - 1
+	 * @throws ArgSizeError If the value is > 2^24 - 1
 	 */
 	public constructor(value: number) {
 		super(Opcode.PUSH); // call the superclass constructor
 
 		// validate the value
-		if (value < 0x00000000 || value > 0x00ffffff) {
+		if (value > 0x00ffffff) {
 			throw new ArgSizeError(value);
 		}
 

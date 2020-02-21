@@ -161,6 +161,13 @@ export enum Opcode {
 	 * popped, respectively.
 	 */
 	LD,
+
+	/**
+	 * Pops the top value off the stack and pushes
+	 * a random positive integer modulus that value
+	 * onto the stack.
+	 */
+	RAND,
 }
 
 // end of file

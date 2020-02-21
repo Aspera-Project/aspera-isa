@@ -19,6 +19,7 @@ export { DIVInstruction } from './codegen/DIVInstruction';
 export { MODInstruction } from './codegen/MODInstruction';
 export { ANDInstruction } from './codegen/ANDInstruction';
 export { ORInstruction } from './codegen/ORInstruction';
+export { NOTInstruction } from './codegen/NOTInstruction';
 export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file

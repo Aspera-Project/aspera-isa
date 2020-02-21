@@ -16,6 +16,7 @@ export { ADDInstruction } from './codegen/ADDInstruction';
 export { SUBInstruction } from './codegen/SUBInstruction';
 export { MULInstruction } from './codegen/MULInstruction';
 export { DIVInstruction } from './codegen/DIVInstruction';
+export { MODInstruction } from './codegen/MODInstruction';
 export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file

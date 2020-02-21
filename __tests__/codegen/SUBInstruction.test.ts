@@ -6,14 +6,20 @@
  * Licensed under the MIT License 
  */
 
-// import
+// imports
 import { SUBInstruction } from '../../src/index';
+import { Opcode } from '../../src/index';
 
 // start of unit tests
 describe('SUBInstruction', () => {
-	// Checks that the SUB opcode has a value of 4
+	// Checks that the SUB instruction has a data value of 0x04000000 
 	it('Proper data generation', () => {
 		expect(new SUBInstruction().data).toBe(0x04000000);
+	});
+
+	// Checks that the SUB instruction has the correct opcode
+	it('Has correct opcode', () => {
+		expect(new SUBInstruction().opcode).toBe(Opcode.SUB);
 	});
 });
 

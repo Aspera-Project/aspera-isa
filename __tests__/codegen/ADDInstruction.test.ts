@@ -6,14 +6,20 @@
  * Licensed under the MIT License 
  */
 
-// import
+// imports
 import { ADDInstruction } from '../../src/index';
+import { Opcode } from '../../src/index';
 
 // start of unit tests
 describe('ADDInstruction', () => {
-	// Checks that the ADD opcode has a value of 3
+	// Checks that the ADD instruction has a data value of 0x03000000 
 	it('Proper data generation', () => {
 		expect(new ADDInstruction().data).toBe(0x03000000);
+	});
+
+	// Checks that the ADD instruction has the correct opcode
+	it('Has correct opcode', () => {
+		expect(new ADDInstruction().opcode).toBe(Opcode.ADD);
 	});
 });
 

@@ -163,7 +163,7 @@ export enum Opcode {
 	LD,
 
 	/**
-	 * Pushes a random 24-bit integer onto the stack 
+	 * Pushes a random 32-bit integer onto the stack
 	 */
 	RAND,
 

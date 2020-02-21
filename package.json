@@ -17,7 +17,7 @@
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json --watch --coverage=false --changedSince=origin/master",
     "prepare": "yarn build",
-    "validate": "yarn lint && yarn format && jest --config jestconfig.json --changedSince=origin/master",
+    "validate": "tsc --noEmit && yarn lint && yarn format && jest --config jestconfig.json --changedSince=origin/master",
     "prepublishOnly": "yarn test && yarn lint",
     "preversion": "yarn lint",
     "version": "yarn format && git add -A src",

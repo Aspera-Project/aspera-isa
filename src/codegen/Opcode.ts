@@ -97,6 +97,13 @@ export enum Opcode {
 
 	/**
 	 * Pops the top value off the stack
+	 * and sets the program counter to
+	 * that value
+	 */
+	JC,
+
+	/**
+	 * Pops the top value off the stack
 	 * and sets the program counter to the argument
 	 * if the popped value is negative
 	 */
@@ -123,7 +130,7 @@ export enum Opcode {
 	 */
 	JNZ,
 
-	/**
+	/**i
 	 * Executes a subroutine located at the
 	 * argument of the instruction
 	 */

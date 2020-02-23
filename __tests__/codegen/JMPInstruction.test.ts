@@ -17,7 +17,7 @@ describe('JMPInstruction', () =>  {
 		expect(new JMPInstruction(0x0000BEEF).data).toBe(0x0C00BEEF);
 	});
 
-	// Checks that the NOT instruction has the correct opcode
+	// Checks that the JMP instruction has the correct opcode
 	it('Has correct opcode', () => {
 		expect(new JMPInstruction(0x0000BEEF).opcode).toBe(Opcode.JMP);
 	});

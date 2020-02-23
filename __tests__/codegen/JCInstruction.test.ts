@@ -21,6 +21,11 @@ describe('JCInstruction', () =>  {
 	it('Has correct opcode', () => {
 		expect(new JCInstruction().opcode).toBe(Opcode.JC);
 	});
+
+	// Checks that the JC instruction has an address field of 0x000000
+	it('Has nullptr address', () => {
+		expect(new JCInstruction().address).toBe(0x000000);
+	});
 });
 
 // end of file

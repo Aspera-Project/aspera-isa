@@ -23,6 +23,7 @@ export { NOTInstruction } from './codegen/NOTInstruction';
 export { XORInstruction } from './codegen/XORInstruction';
 export { JMPInstruction } from './codegen/JMPInstruction';
 export { JCInstruction } from './codegen/JCInstruction';
+export { JNInstruction } from './codegen/JNInstruction';
 export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file

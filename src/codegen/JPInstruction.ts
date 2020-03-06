@@ -1,6 +1,6 @@
 /*
  * JPInstruction.ts
- * Defines a class that represents a JN instruction
+ * Defines a class that represents a JP instruction
  * Created by Andrew Davis
  * Created on 2/24/2020
  * Licensed under the MIT License

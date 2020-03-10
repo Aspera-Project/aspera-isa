@@ -1,8 +1,10 @@
 {
-	"precommit": [
-		"yarn validate",
-		"yarn build",
-		"yarn doc"
-	],
-	"coloredOutput": true
+	"precommit": {
+		"tasks": [
+			"yarn validate",
+			"yarn build",
+			"yarn doc"
+		],
+		"coloredOutput": true 
+	}
 }

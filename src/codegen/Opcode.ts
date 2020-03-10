@@ -130,7 +130,7 @@ export enum Opcode {
 	 */
 	JNZ,
 
-	/**i
+	/**
 	 * Executes a subroutine located at the
 	 * argument of the instruction
 	 */

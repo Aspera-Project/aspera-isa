@@ -1,7 +1,8 @@
 {
 	"precommit": {
 		"tasks": [
-			"yarn validate",
+			"yarn lint",
+			"jest --config jestconfig.json --changedSince=origin/master",
 			"yarn build",
 			"yarn doc"
 		],

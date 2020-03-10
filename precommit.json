@@ -3,5 +3,6 @@
 		"yarn validate",
 		"yarn build",
 		"yarn doc"
-	]
+	],
+	"coloredOutput": true
 }

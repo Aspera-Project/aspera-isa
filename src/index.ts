@@ -27,6 +27,7 @@ export { JNInstruction } from './codegen/JNInstruction';
 export { JPInstruction } from './codegen/JPInstruction';
 export { JZInstruction } from './codegen/JZInstruction';
 export { JNZInstruction } from './codegen/JNZInstruction';
+export { CALLInstruction } from './codegen/CALLInstruction';
 export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file

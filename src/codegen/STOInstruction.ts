@@ -20,7 +20,7 @@ export class STOInstruction extends Instruction {
 	 * Constructs a new `STOInstruction` instance
 	 */
 	public constructor() {
-		super(Opcode.STO); // call the superclass constructor 
+		super(Opcode.STO); // call the superclass constructor
 	}
 }
 

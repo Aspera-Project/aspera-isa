@@ -20,7 +20,7 @@ export class SYSInstruction extends Instruction {
 	 * Constructs a new `SYSInstruction` instance
 	 */
 	public constructor() {
-		super(Opcode.SYS); // call the superclass constructor 
+		super(Opcode.SYS); // call the superclass constructor
 	}
 }
 

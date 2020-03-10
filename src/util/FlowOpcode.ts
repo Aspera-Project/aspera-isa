@@ -12,6 +12,14 @@ import { Opcode } from '../codegen/Opcode';
 /**
  * An [[Opcode]] that modifies program flow
  */
-export type FlowOpcode = Opcode.JMP | Opcode.JC | Opcode.JN | Opcode.JNZ | Opcode.JP | Opcode.JZ | Opcode.CALL | Opcode.RET;
+export type FlowOpcode =
+	| Opcode.JMP
+	| Opcode.JC
+	| Opcode.JN
+	| Opcode.JNZ
+	| Opcode.JP
+	| Opcode.JZ
+	| Opcode.CALL
+	| Opcode.RET;
 
 // end of file

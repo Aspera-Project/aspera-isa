@@ -18,7 +18,7 @@
     "test": "jest --config jestconfig.json --watch --coverage=false --changedSince=origin/master",
     "prepare": "yarn build",
     "validate": "tsc --noEmit && yarn lint && yarn format && jest --config jestconfig.json --changedSince=origin/master",
-    "prepublishOnly": "yarn test && yarn lint",
+    "prepublishOnly": "jest --config jestconfig.json && yarn lint",
     "preversion": "yarn lint",
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags",

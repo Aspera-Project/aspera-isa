@@ -32,6 +32,7 @@ export { RETInstruction } from './codegen/RETInstruction';
 export { SYSInstruction } from './codegen/SYSInstruction';
 export { STOInstruction } from './codegen/STOInstruction';
 export { LDInstruction } from './codegen/LDInstruction';
+export { RANDInstruction } from './codegen/RANDInstruction';
 export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file

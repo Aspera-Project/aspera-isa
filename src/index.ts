@@ -35,6 +35,7 @@ export { LDInstruction } from './codegen/LDInstruction';
 export { RANDInstruction } from './codegen/RANDInstruction';
 export { INCInstruction } from './codegen/INCInstruction';
 export { DECInstruction } from './codegen/DECInstruction';
+export { NEGInstruction } from './codegen/NEGInstruction';
 export { ArgSizeError } from './error/ArgSizeError';
 
 // end of file
